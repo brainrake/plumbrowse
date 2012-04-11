@@ -12,24 +12,26 @@
     <ul>
         <li>Drag one of the links to your bookmarks bar.</li>
         <li>Copy any text from any application. Or if you're on Linux, just select anything.</li>
-        <li>Click the bookmark. The search page will open, with your clipboard content as the query</li>
+        <li>Click the bookmark. The search page will open, with your clipboard content as the query. Also, the bookmark favicon will be fixed.</li>
     </ul>
     <p>
         <a href="http://localhost:45678/opensearch?url=http://youtube.com/results?search_query={searchTerms}">
             <img src="http://youtube.com/favicon.ico"/>
-            yt
+            youtube
         </a>
     </p>
     <p>
+        
         <a href="http://localhost:45678/opensearch?url=http://google.com/search?sourceid=chrome&ie=UTF-8&q={searchTerms}">
             <img src="http://google.com/favicon.ico"/>
-            gg
+            google
         </a>
     </p>
     <p>
+        
         <a href="http://localhost:45678/opensearch?url=https://docs.djangoproject.com/search/?q={searchTerms}">
             <img src="http://djangoproject.com/favicon.ico"/>
-            dj
+            python 3
         </a>
     </p>
 
@@ -39,18 +41,33 @@
     <h3>How It Works</h3>
 
     <p>
-        <p>
-            Bookmark a link like<br/>
-            <code>http://localhost:45678/opensearch?url=http://example.com/search?q={searchTerms}</code>.<br/>
-            The <code>url</code> parameter is an <a href="http://opensearch.org">Opensearch</a>
-            <a href="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax">URL Template</a>.
-        </p>
-        <p>
-            Click the bookmark, and this server will put the clipboard's contents into <code>{searchTerms}</code> and redirect to the resulting link.
-        </p>
+        Bookmark a link like<br/>
+        <code>http://localhost:45678/opensearch?url=http://example.com/search?q={searchTerms}</code>.<br/>
+        The <code>url</code> parameter is an <a href="http://opensearch.org">Opensearch</a>
+        <a href="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax">URL Template</a>.
+    </p>
+    <p>
+        Click the bookmark, and this server will put the clipboard's contents
+        into <code>{searchTerms}</code> and redirect to the resulting link.
     </p>
 
 </section>
+
+<section>
+    <h3>Copyright</h3>
+
+    <p>
+        <a href="http://harmful.cat-v.org/economics/intellectual_property/">Copyright is harmful</a>.
+        Copyleft is a workaround, and thus superfluous.
+    </p>
+    <p>
+        This project is entirely in the [public domain](http://en.wikipedia.org/wiki/Public_domain).
+        You can do whatever you like with it, but don't blame me if your cat explodes.
+    </p>
+</section>
+
+
+
 
 </body>
 
