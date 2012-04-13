@@ -11,6 +11,7 @@ PORT = 45678
 
 
 from http.server import HTTPServer, SimpleHTTPRequestHandler
+from platform import system
 import urllib
 import subprocess
 
@@ -27,7 +28,8 @@ class Handler(SimpleHTTPRequestHandler):
             tpl = self.path.partition("/opensearch?url=")[-1]
 
             # get selection
-            q = subprocess.check_output("sselp").decode("utf-8")
+            cmd = "pbpaste" if system() == "Darwin" else "sselp"
+            q = subprocess.check_output(cmd).decode("utf-8")
             url = tpl.format(searchTerms=q)
 
             # write response
