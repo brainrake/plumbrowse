@@ -7,7 +7,7 @@ This code is in the public domain. You can do whatever you like with it.
 '''
 
 HOST = '127.0.0.1'
-PORT = 45677
+PORT = 45678
 
 
 from http.server import HTTPServer, SimpleHTTPRequestHandler
